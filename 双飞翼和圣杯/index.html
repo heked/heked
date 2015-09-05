@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    
+    html,
+    body {
+      height: 100%;
+    }
+    .title {
+      text-align: center;
+    }
+    .grid {
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      line-height: 30px;
+    }
+    
+    .grid .col-main {
+      padding-left: 200px;
+      padding-right: 200px;
+      min-height: 30px;
+      background: #f0f;
+    }
+    
+    .grid .col-main .main-wrap {     
+      background: #0f0;
+      min-height: 30px;
+    }
+    
+    .grid .col-sub {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 190px;
+      min-height: 30px;
+      background: #f00;
+    }
+    
+    .grid .col-extra {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 190px;
+      min-height: 30px;
+      background: #00f;
+      margin-left: -190px;
+    }
+    
+    .grid-sfy {
+      width: 80%;
+      min-height:30px;
+      line-height: 30px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    .grid-sfy .col-main {
+      float: left;
+      background:#f0f;
+      min-height:30px;
+      width: 100%;
+    }
+    .grid-sfy .col-main .main-wrap {
+      margin-left: 200px;
+      margin-right: 200px;
+      background:#ff0;
+      min-height:30px;
+    }
+    .grid-sfy .col-sub {
+      float: left;
+      margin-left: -100%;
+      width: 190px;
+      background:#00f;
+      min-height:30px;
+    }
+    .grid-sfy .col-extra {
+      float: left;
+      margin-left: -190px;
+      width: 190px;
+      background:#0f0;
+      min-height:30px;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+<h2 class="title">双飞翼</h2>
+  <div class="grid-sfy">
+    <div class="col-main">
+      <div class="main-wrap">我是主列，出来吧！</div>
+    </div>
+    <div class="col-sub">我是子列</div>
+    <div class="col-extra">我是附加列</div>
+  </div>
+  
+<h2 class="title">圣杯</h2>
+  <div class="grid">
+    <div class="col-main">
+        我是主列，出来吧！
+    </div>
+    <div class="col-sub">我是子列</div>
+    <div class="col-extra">我是附加列</div>
+  </div>
+
+
+</body>
+
+</html>
